@@ -46,3 +46,6 @@ run-amazon: node_modules optional-d-support c-preload
 run-amazon-d: node_modules optional-d-support c-preload
 	$(NODE) ./node_modules/.bin/supervisor --exec $(NODE) -- ./app.js --env amazon-d
 
+run-pal: node_modules optional-d-support c-preload
+	$(NODE) ./node_modules/.bin/supervisor --exec $(NODE) -- ./app.js --env pal
+
